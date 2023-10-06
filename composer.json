@@ -1,0 +1,32 @@
+{
+  "name": "wyrihaximus/react-throw-unhandled-rejected-promises",
+  "description": "\uD83E\uDD39 Throw any unhandled rejected promise",
+  "license": "MIT",
+  "require": {
+    "php": "^7.1 || ^8",
+    "react/promise": "^3"
+  },
+  "autoload": {
+    "psr-4": {
+      "WyriHaximus\\React\\": "src"
+    },
+    "files": [
+      "src/bootstrap.php"
+    ]
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/package-versions-deprecated": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "drupol/composer-packages": true,
+      "ergebnis/composer-normalize": true,
+      "icanhazstring/composer-unused": true,
+      "infection/extension-installer": true,
+      "mindplay/composer-locator": true
+    },
+    "platform": {
+      "php": "8.1.13"
+    },
+    "sort-packages": true
+  }
+}
