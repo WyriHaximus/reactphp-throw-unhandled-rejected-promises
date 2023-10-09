@@ -16,6 +16,13 @@ To install via [Composer](http://getcomposer.org/), use the command below, it wi
 composer require wyrihaximus/react-throw-unhandled-rejected-promises
 ```
 
+# Usage
+
+1. Install this package
+2. Watch unhandled rejected promises get thrown
+
+Due to the way this package currently works there is no way to know where it will come from.
+
 # License
 
 The MIT License (MIT)
