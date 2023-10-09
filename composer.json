@@ -8,7 +8,10 @@
     "react/promise": "3.0.0"
   },
   "require-dev": {
-    "wyrihaximus/test-utilities": "^5.2"
+    "wyrihaximus/test-utilities": "^5 || ^4 || ^3"
+  },
+  "conflict": {
+    "react/promise": "<3.0.0 >3.0.0"
   },
   "autoload": {
     "psr-4": {
@@ -34,21 +37,8 @@
       "mindplay/composer-locator": true
     },
     "platform": {
-      "php": "7.1.13"
+      "php": "7.4.13"
     },
     "sort-packages": true
-  },
-  "scripts": {
-    "post-install-cmd": [
-      "composer normalize",
-      "composer update --lock --no-scripts"
-    ],
-    "post-update-cmd": [
-      "composer normalize",
-      "composer update --lock --no-scripts"
-    ],
-    "pre-autoload-dump": [
-      "WyriHaximus\\Broadcast\\Composer\\Installer::findEventListeners"
-    ]
   }
 }

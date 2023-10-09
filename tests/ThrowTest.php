@@ -5,7 +5,9 @@ declare(strict_types=1);
 namespace WyriHaximus\Tests\React;
 
 use React\EventLoop\Loop;
+use RuntimeException;
 use WyriHaximus\TestUtilities\TestCase;
+
 use function React\Promise\reject;
 
 final class ThrowTest extends TestCase
@@ -15,9 +17,9 @@ final class ThrowTest extends TestCase
      */
     public function throwNcatch(): void
     {
-        self::expectException(\RuntimeException::class);
+        self::expectException(RuntimeException::class);
 
-        reject(new \RuntimeException('Tik, tok, boom!'));
+        reject(new RuntimeException('Tik, tok, boom!'));
 
         Loop::run();
     }
@@ -27,10 +29,10 @@ final class ThrowTest extends TestCase
      */
     public function doubleThrowNcatchBoth(): void
     {
-        self::expectException(\RuntimeException::class);
+        self::expectException(RuntimeException::class);
 
-        reject(new \RuntimeException('Tik, tok!'));
-        reject(new \RuntimeException('Boom!'));
+        reject(new RuntimeException('Tik, tok!'));
+        reject(new RuntimeException('Boom!'));
 
         Loop::run();
     }
