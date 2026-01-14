@@ -8,7 +8,7 @@
     "react/promise": "3.0.0"
   },
   "require-dev": {
-    "wyrihaximus/test-utilities": "^5 || ^4 || ^3"
+    "wyrihaximus/test-utilities": "^5 || ^4 || ^3 || ^10"
   },
   "conflict": {
     "react/promise": "<3.0.0 >3.0.0"
